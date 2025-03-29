@@ -3,6 +3,7 @@
 ## Overview
 This project is an interactive 3D web application built with Three.js that displays a dynamic scene featuring an animated water plane, a realistic sky, and a rotating ring of Pokémon cubes. Each cube fetches random Pokémon data from the [PokéAPI](https://pokeapi.co/) and displays its sprite and details when clicked. The application also supports a **test mode** (enabled via a `?testMode=true` URL parameter) to help stabilize the scene for automated GUI testing with Cypress.
 
+
 ## Features
 - **Dynamic 3D Scene:**  
   Renders an ocean-like water surface, a dynamic sky, and a rotating ring of Pokémon cubes using Three.js.
@@ -14,6 +15,8 @@ This project is an interactive 3D web application built with Three.js that displ
   A special test mode that slows or nearly freezes animations (via `?testMode=true`) to ensure reliable GUI tests.
 - **Automated Testing:**  
   Includes at least three Cypress end-to-end tests verifying scene loading, data integrity, and refresh functionality.
+- **Powered by WebGL via Three.js:**  
+  Uses hardware-accelerated rendering through WebGL to create a rich, interactive 3D scene with water, sky, and Pokémon cubes.
 
 ## Installation and Setup
 
@@ -26,47 +29,46 @@ This project is an interactive 3D web application built with Three.js that displ
    ```bash
    git clone <your-repository-url>
 
-### Navigate to the Project Directory:
+2. **Navigate to the Project Directory:**
 
-bash
-Copy
+```bash
+
 cd 3d-pokemon-ocean-scene
-Install Dependencies:
+```
+3. **Install Dependencies:**
 
-bash
-Copy
+```bash
 npm install
-Start the Development Server:
+```
+4. **Start the Development Server:**
 
-bash
-Copy
+```bash
 npm run dev
+```
 The application will start (usually at http://localhost:5173).
 
 ### Running in Test Mode
 To run the app in test mode (which disables certain interactions and slows animations), visit:
-
-ruby
-Copy
+```ruby
 http://localhost:5173/?testMode=true
-
+```
 
 ### Running the Tests
 This project uses Cypress for automated GUI testing. To run the tests:
 
 Start the development server:
 
-bash
-Copy
+```bash
 npm run dev
+```
 Open Cypress in another terminal:
 
-bash
-Copy
+```bash
 npm run cypress:open
+```
 In the Cypress Test Runner, select the test file (e.g., cypress/e2e/pokemon_data.cy.js) to run the tests.
 
-Project Structure
+### Project Structure
 index.html:
 The main HTML file setting up the overlay and loading the main JavaScript module.
 
@@ -78,9 +80,6 @@ Contains the Cypress end-to-end tests verifying that the scene loads, data is co
 
 package.json:
 Lists the project dependencies and scripts.
-
-### README.md:
-This documentation file.
 
 ### Documentation and Version Control
 JSDoc Comments:
@@ -108,3 +107,5 @@ Additional interactive features (e.g., filtering or detailed Pokémon statistics
 Enhanced UI/UX with polished animations and responsiveness.
 
 More comprehensive testing, including unit and performance tests.
+![WebGL](https://img.shields.io/badge/WebGL-Enabled-green?logo=webgl)
+
