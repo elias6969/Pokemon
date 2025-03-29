@@ -82,25 +82,13 @@ package.json:
 Lists the project dependencies and scripts.
 
 ### Documentation and Version Control
-JSDoc Comments:
+**JSDoc Comments:**
 All functions in src/main.js are fully documented using JSDoc.
 
-Git Version Control:
+**Git Version Control:**
 The project is maintained in Git with a meaningful commit history. We also use GitHub Issues and Projects (Kanban/Scrum board) to manage our sprints and tasks.
 
-Scrum Practices:
-We follow Scrum with regular sprint planning, daily scrums, sprint reviews, and retrospectives.
-
-Presentation and Future Enhancements
-For the final presentation, we will demonstrate:
-
-The interactive 3D scene and how data is fetched from the PokéAPI.
-
-The automated GUI tests running in Cypress.
-
-Our Scrum artifacts (sprint planning, daily scrums, reviews, and retrospectives).
-
-Future enhancements may include:
+**Future enhancements may include:**
 
 Additional interactive features (e.g., filtering or detailed Pokémon statistics).
 
