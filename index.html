@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Ocean & Sky</title>
+  <!--
+    This HTML file is the main entry point of the application.
+    It sets up the basic structure of the page, includes the overlay for displaying Pokémon info,
+    and loads the main JavaScript (main.js) module via Vite.
+  -->
+  <style>
+    /* Basic page styling */
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #000;
+      font-family: sans-serif;
+    }
+    /* Overlay container for Pokémon info and refresh button */
+    #overlay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 12px;
+      color: #fff;
+      z-index: 9999;
+      width: 300px;
+      border-radius: 8px;
+    }
+    /* Style for the button row */
+    .button-row {
+      margin-top: 8px;
+    }
+    /* Button style */
+    button {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    /* Info display styling */
+    #pokemonInfo {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    /* Highlight style for info display */
+    .highlight {
+      border: 2px solid #ff0;
+      margin-bottom: 8px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Overlay that displays instructions and Pokémon info -->
+  <div id="overlay">
+    <h1>Pokémon Ocean & Sky</h1>
+    <p>A ring of floating Pokémon cubes, water waves, and a dynamic sky!</p>
+    <!-- Refresh button to load new Pokémon data -->
+    <div class="button-row">
+      <button id="refreshAllBtn">Refresh All</button>
+    </div>
+    <!-- Info overlay: displays details about the clicked Pokémon -->
+    <div id="pokemonInfo">Click on a Pokémon cube to see its info.</div>
+  </div>
+
+  <!-- Main JavaScript entry point loaded as an ES module -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
