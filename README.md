@@ -27,13 +27,13 @@ This project is an interactive 3D web application built with Three.js that displ
 ### Steps
 1. **Clone the Repository:**
    ```bash
-   git clone <your-repository-url>
+   git clone <repository-url>
 
 2. **Navigate to the Project Directory:**
 
 ```bash
 
-cd 3d-pokemon-ocean-scene
+cd Pokemon
 ```
 3. **Install Dependencies:**
 
