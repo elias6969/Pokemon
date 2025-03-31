@@ -26,9 +26,9 @@ This project is an interactive 3D web application built with Three.js that displ
 
 ### Steps
 1. **Clone the Repository:**
-   ```bash
-   git clone <repository-url>
-
+```bash
+git clone <repository-url>
+```
 2. **Navigate to the Project Directory:**
 
 ```bash
